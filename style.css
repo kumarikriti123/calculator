@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+.calculator{
+    width: auto;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+#display {
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+  }
+  #display::-webkit-scrollbar {
+    display: block;
+    height: 0px;
+}
+button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-family: "Abril Fatface", cursive;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+button#equal {
+    height: 130px;
+}
+.calculator {
+    background-color: #fff;
+    box-shadow: rgb(209, 201, 87) 0px 14px 28px, rgb(143, 131, 57) 0px 10px 10px;
+}
+
+.calculator #display {
+    color: #0a1e23;
+    font-family: "Abril Fatface", cursive;
+}
+
+.calculator button#clear {
+    background-color: #ffd5d8;
+    color: #fd1323;
+    box-shadow: rgb(255, 158, 158) 0px 30px 60px -12px inset, rgb(249, 155, 155) 0px 18px 36px -18px inset;
+    font-size: 25px;
+}
+ 
+.calculator button.btn-num {
+    background-color: #c3eaff;
+    color: #0e0d0d;
+    border: #30b3fa;
+    box-shadow: rgb(150, 196, 225) 0px 30px 60px -12px inset, rgb(149, 203, 232) 0px 18px 36px -18px inset;;
+}
+
+.calculator button.btn-opt {
+    background-color: #f9d8f6;
+    color: #a5059da0; 
+    box-shadow: rgb(235, 142, 226) 0px 30px 60px -12px inset, rgb(230, 167, 219) 0px 18px 36px -18px inset;  
+    font-size: 40px;
+  }
+  .calculator button#backspace , .calculator button#per{
+    font-size: 25px;
+  }
+  .calculator button.btn-equal {
+    background-color: #adf9e7;
+    color: #000000;
+    box-shadow: rgb(122, 208, 132) 0px 30px 60px -12px inset, rgb(153, 237, 130) 0px 18px 36px -18px inset;
+  }
+  body.dark .main{
+    background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+  }
+  body.dark .calculator {
+    background-color: #071115;
+    box-shadow: rgb(255, 255, 249) 0px 14px 28px, rgb(251, 245, 208) 0px 10px 10px;
+  }
+
+  body.dark .calculator #display {
+    color: #f8fafb;
+    font-family: "Abril Fatface", cursive;
+  }
+  body.dark .calculator #icon {
+    color: #fff;
+}
+#icon {
+    font-size: 2rem;
+}
